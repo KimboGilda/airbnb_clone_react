@@ -1,11 +1,16 @@
+/* General App Styling */
 .app {
   display: flex;
+  font-family: "Roboto", sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
 }
 
 .main {
   flex-basis: 60%;
   display: flex;
   flex-direction: column;
+  padding: 20px;
 }
 
 .map {
@@ -13,17 +18,62 @@
   height: 100vh;
   top: 0;
   position: sticky;
+  background-color: #e0e0e0;
+  box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
 }
 
+/* Title Styling */
+.title {
+  font-size: 32px;
+  font-weight: 700;
+  color: #ff5a5f;
+  margin-bottom: 20px;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+/* Search Bar Styling */
 .search {
   padding: 10px;
   margin-right: 5px;
 }
 
 .search input {
-  height: 40px;
-  font-size: 20px;
-  padding-left: 5px;
-  color: #999;
+  height: 45px;
+  font-size: 18px;
+  padding-left: 15px;
+  color: #333;
   width: 100%;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  background-color: #fff;
+  transition: all 0.3s ease;
+}
+
+.search input:focus {
+  outline: none;
+  border-color: #ff5a5f;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Flats List Styling */
+.flats {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.flat {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 10px;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  background-color: #fff;
+}
+
+.flat:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }

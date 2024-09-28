@@ -59,6 +59,7 @@ class App extends Component {
     return (
       <div className="app">
         <div className="main">
+          <h1 className="title">Airbnb Clone</h1>
           <div className="search">
             <input
               type="text"
