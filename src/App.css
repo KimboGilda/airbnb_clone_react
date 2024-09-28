@@ -6,6 +6,7 @@
   color: #333;
 }
 
+/* Main Container Flex */
 .main {
   flex-basis: 60%;
   display: flex;
@@ -76,4 +77,40 @@
 .flat:hover {
   transform: scale(1.02);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+  .app {
+    flex-direction: column;
+  }
+
+  .main {
+    flex-basis: 100%;
+    order: 2;
+  }
+
+  .map {
+    height: 50vh;
+    order: 1;
+  }
+
+  .flats {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 24px;
+  }
+
+  .search input {
+    height: 40px;
+    font-size: 16px;
+  }
+
+  .flat {
+    padding: 8px;
+  }
 }
