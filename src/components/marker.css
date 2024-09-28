@@ -1,0 +1,9 @@
+.marker {
+  width: 48x;
+  background-color: white;
+  border: 1px solid #999;
+  border-radius: 2px;
+  text-align: center;
+  padding: 4px;
+  font-size: 18px;
+}
